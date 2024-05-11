@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@font-face {
+  font-family: myFont;
+  src: url(font/font.ttf);
+}
+
+body {
+  background-color: #c7c2fa;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 0rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 500;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  float: left;
+
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 4px;
+  border-radius: 50%;
+  padding-bottom: 4px;
+}
+header .navbar a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 15px;
+  color: #c7c2fa;
+  text-decoration: none;
+}
+header .navbar a:hover {
+  color: #c7c2fa;
+}
+
+header .icon {
+  transition: transform 0.2s;
+}
+
+header .icon:hover {
+  transform: scale(1.05);
+}
+
+header .icon a {
+  margin-left: 25px;
+}
+header .icon a:hover {
+  color: #878a63;
+}
+.heading {
+  font-family: myFont;
+  font-size: 45px;
+  color: #3a3d27;
+  margin-top: 100px;
+}
+section {
+  width: 80%;
+  margin: 0 auto; /* Center the section on the page */
+  padding: 50px 0; /* Padding at the top and bottom */
+  text-align: center;
+  background-color: #c7c2fa;
+}
+
+/* Container for the products */
+.box {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(25% - 20px);
+  margin: 10px;
+  border: 1px solid #efcbcd;
+  box-shadow: 0 0.5rem 1rem #c7c2fa;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Product image container */
+.box .image {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* To maintain a square aspect ratio */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Product details container */
+.box .content {
+  padding: 10px 15px;
+}
+
+.box .content .lowerContent {
+  padding-top: 10px;
+  padding-left: 10px;
+  display: flex;
+}
+.box .content .lowerContent .price {
+  padding-left: 60px;
+}
+
+/* Product title */
+.title {
+  font-weight: 900;
+
+  margin-bottom: 5px;
+  color: #333; /* Dark gray for the title */
+  font-family: "Poppins", sans-serif;
+}
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  justify-content: left;
+  /* text-align: left; */
+  text-align: justify;
+}
+
+/* Product price inside the container */
+.box .content .price {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+/*For dropdown navbar Add this media query for small devices */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem #e7b6b0;
+    z-index: 999;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar a:hover {
+    background-color: #f2e2df;
+  }
+
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Style for menu toggle */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #f2e2df;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* This hides the menu toggle button */
+  }
+
+  .navbar {
+    display: flex; /* This ensures that the menu is always shown */
+  }
+}
+
+footer {
+  box-shadow: 0 0.5rem 1rem #c7c2fa;
+  background: #fff;
+  margin-left: auto; /* Center the section on the page */
+  margin-right: auto;
+  padding: 0px;
+  text-align: center;
+}
+footer .fcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 0px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+footer .fcontainer .fbox {
+  padding: 0px;
+  flex: 16 16 200px;
+  line-height: 0;
+}
+
+footer .fcontainer .fbox h5 {
+  color: #c7c2fa;
+  font-size: 25px;
+  padding: 8px 0;
+  font-family: "Poppins", sans-serif;
+}
+footer .fcontainer .fbox a {
+  display: block;
+  color: #666;
+  font-size: 24px;
+  padding: 25px 0;
+  text-decoration: none;
+}
+footer .fcontainer .fbox .footerIcon {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+footer .fcontainer .fbox a:hover {
+  color: #e7b6b0;
+}
+
+footer .fcontainer .fbox img {
+  margin-top: 16px;
+}
+
+footer .rights {
+  text-align: center;
+  padding: 24px;
+  margin-top: 24px;
+  padding-top: 40px;
+  font-size: 15px;
+  color: #333;
+  border-top: 1.6px solid rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 576px) {
+  header .navbar a {
+    font-size: 11px;
+  }
+  .box {
+    width: 48%;
+    margin: 1%;
+  }
+  .box .image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .box .content {
+    padding: 10px 15px;
+  }
+
+  .box .content .lowerContent {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+  }
+  .box .content .lowerContent .price {
+    padding-left: 60px;
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .box .content .price {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .box {
+    width: 31%;
+    margin: 1%;
+  }
+  header .navbar a {
+    font-size: 15px;
+  }
+  .box .content h3 {
+    font-size: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .box {
+    width: 25%;
+    height: 50%;
+    margin: 1%;
+    padding-bottom: 0;
+  }
+
+  .box .image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .box .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .box .content .lowerContent {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+  }
+  .box .content .lowerContent .price {
+    padding-left: 20px;
+  }
+
+  .box .content h3 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .box .content .price {
+    font-family: "Poppins", sans-serif;
+  }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Blume Shop</title>
+    <link rel="stylesheet" href="products.css" type="text/css" />
+    <script src="products.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="./pic/logo.jpeg" width="70" height="70" alt="Gifts4U"
+      /></a>
+      <!-- <input type="checkbox" id="menu-toggle" /> -->
+      <label for="menu-toggle" class="menu-toggle"> Menu</label>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="newarrivals.html">New Arrival</a>
+        <a href="products.html">Products</a>
+
+        <a href="Contact.html">Contact</a>
+      </nav>
+      <div class="icon">
+        <a href="LogIn.html" class="User"
+          ><img src="pic/user.png" width="25" height="25" alt="User Icon"
+        /></a>
+        <a href="cart.html" class="Shopping cart"
+          ><img
+            src="pic/shopping-cart.png"
+            width="25"
+            height="25"
+            alt="Cart Icon"
+        /></a>
+      </div>
+    </header>
+
+    <section class="items" id="items">
+      <h1 class="heading">New Arrivals</h1>
+      <div class="box-container">
+        <!-- product 1 -->
+        <div class="box">
+          <div class="image">
+            <img src="./pic/products/candy-canes.jpg" alt="Pic1" />
+          </div>
+          <div class="content">
+            <h3 class="title">Candy Canes</h3>
+            <p class="paragraph">
+              Indulge in the perfect combination of taste and visual appeal with
+              our delightful candy canes. These sweet treats are designed to
+              tantalize your tastebuds and captivate your eyes
+            </p>
+            <div class="lowerContent">
+              <a href="cart.html" class="Shopping cart"
+                ><img
+                  src="pic/shopping-cart.png"
+                  width="25"
+                  height="25"
+                  alt=" shopping cart icone"
+              /></a>
+              <div class="price">150$</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="box">
+          <div class="image">
+            <img src="./pic/products/christmas.jpg" alt="Pic2" />
+          </div>
+
+          <div class="content">
+            <h3 class="title">Christmas Windup Toy</h3>
+            <p class="paragraph">
+              These creative and fun wind-up Christmas toys are the perfect and
+              most beautiful addition to your holiday decorations, bringing joy
+              and entertainment to both kids and adults alike
+            </p>
+            <div class="lowerContent">
+              <a href="cart.html" class="Shopping cart"
+                ><img
+                  src="pic/shopping-cart.png"
+                  width="25"
+                  height="25"
+                  alt=" shopping cart icone"
+              /></a>
+              <div class="price">25$</div>
+            </div>
+          </div>
+        </div>
+        <!-- product 3 -->
+        <div class="box">
+          <div class="image">
+            <img src="pic/products/gingerbread-house.jpg" alt="Pic3" />
+          </div>
+
+          <div class="content">
+            <h3 class="title">Ginger Bead Houses</h3>
+            <p class="paragraph">
+              With their intricate designs and irresistible flavors, these
+              gingerbread houses are not only a feast for the eyes but also a
+              delight for your taste buds.Each house is a unique masterpiece
+            </p>
+            <div class="lowerContent">
+              <a href="cart.html" class="Shopping cart"
+                ><img
+                  src="pic/shopping-cart.png"
+                  width="25"
+                  height="25"
+                  alt=" shopping cart icone"
+              /></a>
+              <div class="price">150$</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="fcontainer">
+        <div class="fbox">
+          <h5>Get To Know Us</h5>
+          <a href="index.html" target="_blank">Home</a>
+          <a href="contact.html" target="_blank">Contact us</a>
+        </div>
+
+        <div class="fbox">
+          <h5>Follow Us</h5>
+          <div class="footerIcon">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="pic/instagram.png"
+                height="50"
+                width="50"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.google.com/maps" target="_blank"
+              ><img
+                src="pic/googlemap.png"
+                height="50"
+                width="50"
+                alt="Google Maps"
+            /></a>
+            <a href="https://web.whatsapp.com" target="_blank"
+              ><img
+                src="pic/whatsapp.png"
+                height="50"
+                width="50"
+                alt="WhatsApp"
+            /></a>
+          </div>
+        </div>
+
+        <div class="fbox">
+          <h5>Payment Method</h5>
+          <img
+            src="pic/payment.jpg"
+            height="80"
+            width="250"
+            alt="payment Method"
+          />
+        </div>
+      </div>
+
+      <div class="rights">| Copyright &copy; 2024 Gifts4U shop |</div>
+    </footer>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>

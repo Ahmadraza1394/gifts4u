@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cartStyle.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo"
+        ><img src="./pic/logo.jpeg" width="70" height="70" alt="Gifts4U"
+      /></a>
+      <!-- <input type="checkbox" id="menu-toggle" /> -->
+      <label for="menu-toggle" class="menu-toggle"> Menu</label>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="newarrivals.html">New Arrival</a>
+        <a href="products.html">Products</a>
+
+        <a href="Contact.html">Contact</a>
+      </nav>
+      <div class="icon">
+        <a href="LogIn.html" class="User"
+          ><img src="pic/user.png" width="25" height="25" alt="User Icon"
+        /></a>
+        <a href="cart.html" class="Shopping cart"
+          ><img
+            src="pic/shopping-cart.png"
+            width="25"
+            height="25"
+            alt="Cart Icon"
+        /></a>
+      </div>
+    </header>
+
+    <!-- ........................... -->
+
+    <section class="cartContainer" id="cartContainer">
+      <h1 class="heading">Your Cart</h1>
+
+      <div class="cartContent" id="cartContent"></div>
+      <a href="products.html" id="btnempty" class="button">Empty Cart</a>
+      <a href="Thanks.html" id="checkout" class="button">Check out</a>
+    </section>
+
+    <!-- ........................... -->
+
+    <footer>
+      <div class="fcontainer">
+        <div class="fbox">
+          <h5>Get To Know Us</h5>
+          <a href="index.html" target="_blank">Home</a>
+          <a href="contact.html" target="_blank">Contact us</a>
+        </div>
+
+        <div class="fbox">
+          <h5>Follow Us</h5>
+          <div class="footerIcon">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="pic/instagram.png"
+                height="50"
+                width="50"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.google.com/maps" target="_blank"
+              ><img
+                src="pic/googlemap.png"
+                height="50"
+                width="50"
+                alt="Google Maps"
+            /></a>
+            <a href="https://web.whatsapp.com" target="_blank"
+              ><img
+                src="pic/whatsapp.png"
+                height="50"
+                width="50"
+                alt="WhatsApp"
+            /></a>
+          </div>
+        </div>
+
+        <div class="fbox">
+          <h5>Payment Method</h5>
+          <img
+            src="pic/payment.jpg"
+            height="80"
+            width="250"
+            alt="payment Method"
+          />
+        </div>
+      </div>
+
+      <div class="rights">| Copyright &copy; 2024 Gifts4U shop |</div>
+    </footer>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar").classList.toggle("active");
+        });
+    </script>
+    <script src="cart.js"></script>
+  </body>
+</html>
